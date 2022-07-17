@@ -1,3 +1,3 @@
-module github.com/josephphyo/export-packages-test/setter-methods
+module github.com/josephphyo/export-packages-test/calendar-go-method
 
 go 1.18

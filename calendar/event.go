@@ -11,12 +11,12 @@ type Event struct {
 }
 
 // Get Method
-func (e Event) Title() string {
+func (e *Event) Title() string {
 	return e.title
 }
 
 // Set Method
-func (e Event) SetTitle(title string) error {
+func (e *Event) SetTitle(title string) error {
 	if utf8.RuneCountInString(title) > 30 {
 		return errors.New("Invalid Title")
 	}

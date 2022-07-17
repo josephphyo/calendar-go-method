@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/josephphyo/export-packages-test/setter-methods/calendar"
+	"github.com/josephphyo/export-packages-test/calendar-go-method/calendar"
 )
 
 func main() {
@@ -14,6 +14,7 @@ func main() {
 	if error != nil {
 		log.Fatal(error)
 	}
+	fmt.Println("Title:", event.Title())
 
 	error = event.SetYear(2022)
 	if error != nil {
