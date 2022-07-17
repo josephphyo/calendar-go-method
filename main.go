@@ -8,25 +8,30 @@ import (
 )
 
 func main() {
-	date := calendar.Date{}
+	event := calendar.Event{}
 
-	error := date.SetYear(2022)
+	error := event.SetTitle("Some Event!!")
 	if error != nil {
 		log.Fatal(error)
 	}
-	fmt.Println("Year:", date.Year())
 
-	error = date.SetMonth(02)
+	error = event.SetYear(2022)
 	if error != nil {
 		log.Fatal(error)
 	}
-	fmt.Println("Month:", date.Month())
+	fmt.Println("Year:", event.Year())
 
-	error = date.SetDay(14)
+	error = event.SetMonth(02)
 	if error != nil {
 		log.Fatal(error)
 	}
-	fmt.Println("Day:", date.Day())
+	fmt.Println("Month:", event.Month())
 
-	fmt.Println("Year:", date.Year(), "Month:", date.Month(), "Day:", date.Day())
+	error = event.SetDay(14)
+	if error != nil {
+		log.Fatal(error)
+	}
+	fmt.Println("Day:", event.Day())
+
+	fmt.Println("Title:", event.Title(), "Year:", event.Year(), "Month:", event.Month(), "Day:", event.Day())
 }
