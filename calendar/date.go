@@ -9,6 +9,7 @@ type Date struct {
 	day   int
 }
 
+// Get Methods
 func (d *Date) Year() int {
 	return d.year
 }
@@ -21,6 +22,7 @@ func (d *Date) Day() int {
 	return d.day
 }
 
+// Set Methods
 func (d *Date) SetYear(year int) error {
 	if year < 1 {
 		return errors.New("Invaild Year")
