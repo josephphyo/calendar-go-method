@@ -10,20 +10,20 @@ import (
 func main() {
 	date := calendar.Date{}
 
-	error := date.SetYear(2019)
+	error := date.SetYear(2022)
 	if error != nil {
 		log.Fatal(error)
 	}
 
-	error = date.SetMonth(10)
+	error = date.SetMonth(02)
 	if error != nil {
 		log.Fatal(error)
 	}
 
-	error = date.SetDay(12)
+	error = date.SetDay(14)
 	if error != nil {
 		log.Fatal(error)
 	}
 
-	fmt.Println("Year:", date.year, "Month:", date.month, "Day:", date.day)
+	fmt.Println(date)
 }
