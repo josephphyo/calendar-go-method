@@ -11,7 +11,7 @@ type Date struct {
 
 func (d *Date) SetYear(year int) error {
 	if year < 1 {
-		return errors.New("Invaild year")
+		return errors.New("Invaild Year")
 	}
 	d.year = year
 	return nil
@@ -19,7 +19,7 @@ func (d *Date) SetYear(year int) error {
 
 func (d *Date) SetMonth(month int) error {
 	if month < 1 || month > 12 {
-		return errors.New("Invalid month")
+		return errors.New("Invalid Month")
 	}
 	d.month = month
 	return nil
